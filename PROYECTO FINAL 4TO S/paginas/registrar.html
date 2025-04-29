@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Tienda Agrícola Cali/Registrar</title>
+</head>
+<body>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/header.css"/>
+  <link rel="stylesheet" href="../css/resgistro.css"/>
+
+</head>
+<body>
+  <header class="header">
+    <div class="container logo-nav-container">
+      <img src="../img/LOGO T AGR CALI.png" alt="Logo La Tienda Agrícola Cali" class="logo" />
+      <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+      <nav id="navigation" class="navigation">
+        <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
+        <ul class="menu">
+          <li><a href="../Inicio.html">Inicio</a></li>
+          <li><a href="registrar.html">Registrar</a></li>
+          <li class="dropdown">
+            <a href="./productos.html">Productos</a>
+            <ul class="submenu">
+              <li><a href="#">Generadores</a></li>
+              <li><a href="#">Motobombas</a></li>
+              <li><a href="#">Fumigadoras</a></li>
+              <li><a href="#">Guadañas</a></li>
+              <li><a href="#">Motosierra</a></li>
+            </ul>
+          </li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+  <div class="container">
+    <h1>Registro de Productos</h1>
+    <p>Complete el formulario para agregar un nuevo producto al inventario.</p>
+    
+    <form id="formRegistro">
+        <label for="nombre">Nombre del Producto:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="categoria">Categoría:</label>
+        <select id="categoria" required>
+          <option value="generador">Generadores</option>
+          <option value="motobomba">Motobombas</option>
+          <option value="fumigadora">Fumigadoras</option>
+          <option value="guadana">Guadañas</option>
+          <option value="motosierra">Motosierras</option>
+        </select>
+
+        <label for="imagen">Imagen (URL):</label>
+        <input type="text" id="imagen" placeholder="https://ejemplo.com/imagen.jpg">
+
+        <label for="codigo">Código de Producto:</label>
+        <input type="text" id="codigo" required>
+
+        <label for="precio">Precio ($):</label>
+        <input type="number" id="precio" step="0.01" required>
+
+        <!-- Atributos adicionales -->
+        <label for="marca">Marca</label>
+        <input type="text" id="marca">
+
+        <label for="stock">Stock Inicial:</label>
+        <input type="number" id="stock">
+
+        <div class="buttons">
+            <button type="submit" class="btn-primary">Registrar</button>
+            <button type="reset" class="btn-secondary">Limpiar Campos</button>
+        </div>
+    </form>
+</div>
+</main>
+<script src="../js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+/* ----------- ESTILOS GENERALES ----------- */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: 0;
+    padding: 0;
+    background-color: #a4d1c8;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: #0011ff;
+  }
+
+  .container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 40px auto;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* ----------- MAIN ----------- */
+  .main {
+    padding-top: 16px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .present{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+  }
+
+  .slider {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+    margin-top: 120px; /* espacio debajo del header fijo */
+  }
+  
+  .slider-track {
+    display: flex;
+    width: calc(100% * 5); /* Si tienes 5 imágenes, cambia el número según tus slides */
+    animation: moveSlider 20s linear infinite;
+  }
+
+  
+.slide {
+    flex: 0 0 auto;
+    max-width: 100%;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 6/2;
+    object-fit: cover;
+   display: block;
+  }
+
+  
+  /* Animación automática del slider */
+  @keyframes moveSlider {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-47%); }
+  }
+  
+  /* Responsive: se adapta automáticamente */
+  @media (max-width: 768px) {
+    .slide img {
+        aspect-ratio: 4 / 5;
+        max-height: 80vh;
+      }
+    }
+  
+  
+  /* ----------- FOOTER ----------- */
+  .footer {
+    background: #f2f2f2;
+    padding: 4rem 0;
+    text-align: center;
+    margin-top: 6rem;
+  }
+  
