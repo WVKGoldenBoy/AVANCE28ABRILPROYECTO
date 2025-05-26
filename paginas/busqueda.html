@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La tienda agricola/Busqueda</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/header.css"/>
+    <link rel="stylesheet" href="../css/busqueda.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container logo-nav-container">
+      <img src="../img/LOGO T AGR CALI.png" alt="Logo La Tienda Agrícola Cali" class="logo" />
+      <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+      <nav id="navigation" class="navigation">
+        <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
+        <ul class="menu">
+          <li><a href="../Inicio.html">Inicio</a></li>
+          <li><a href="registrar.html">Registrar</a></li>
+          <li><a href="../paginas/productos.html">Productos</a></li>
+          <li><a href="busqueda.html">Buscar</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    
+  <main>
+     <div class="busqueda-container">
+      <h2 class="busqueda-title">Buscar Maquina</h2>
+      <p>Utilice los siguientes filtros para encontrar la maquinaria ideal:</p>
+      
+      <form id="busqueda-form">
+        <div class="filtros-container">
+          <div class="filtro">
+            <div class="form-group">
+              <label for="filtro-nombre">Nombre:</label>
+              <input type="text" id="filtro-nombre" name="nombre" placeholder="Buscar por nombre">
+              <small>Filtra maquinaria que contengan el texto</small>
+            </div>
+          </div>
+          
+          <div class="filtro">
+            <div class="form-group">
+              <label for="filtro-categoria">Categoría:</label>
+              <select id="filtro-categoria" name="categoria">
+                <option value="">Todas las categorías</option>
+              </select>
+              <small>Filtra por categoría específica</small>
+            </div>
+          </div>
+
+          <div class="filtro">
+            <div class="form-group">
+             <label for="filtro-marca">Marca:</label>
+             <input type="text" id="filtro-marca" name="marca" placeholder="Buscar por marca">
+            <small>Filtra por la marca del producto</small>
+            </div>
+            </div>
+          
+          <div class="filtro">
+            <div class="form-group">
+              <label for="filtro-precio">Precio máximo:</label>
+              <input type="number" id="filtro-precio" name="precio" placeholder="Precio máximo">
+              <small>Filtra maquinaria con precio menor o igual</small>
+            </div>
+          </div>
+        </div>
+        
+        <div class="botones-container">
+          <button type="button" id="btn-limpiar" class="btn btn-secondary">Limpiar filtros</button>
+          <button type="submit" id="btn-buscar" class="btn">Buscar Maquina</button>
+        </div>
+      </form>
+      
+      <div class="loading" id="loading">
+        <div class="loading-icon"></div>
+        <p>Buscando tu maquinaria ideal...</p>
+      </div>
+    </div>
+  </main>
+  <script src="../js/scripts.js"></script>
+<script src="../js/busqueda.js"></script>
+</body>
+</html>

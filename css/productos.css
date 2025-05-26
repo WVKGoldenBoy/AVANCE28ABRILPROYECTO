@@ -1,0 +1,159 @@
+body {
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  .contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    padding-top: 220px;
+    margin: auto;
+  }
+  
+ .tarjeta-producto {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+.tarjeta-producto:hover {
+  transform: translateY(-6px);
+}
+
+.tarjeta-producto img {
+ width: 100%;
+  height: 160px;
+  object-fit: contain;
+  object-position: center;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+}
+
+.tarjeta-producto .contenido {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nombre-producto {
+  font-weight: bold;
+  font-size: 16px;
+  color: #222831;
+  text-align: left;
+}
+
+.precio-producto {
+  font-size: 16px;
+  color: #2e7d32;
+  margin-bottom: 4px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.tarjeta-producto .especificacion {
+  font-size: 14px;
+  color: #555;
+}
+
+.tarjeta-producto .especificacion strong {
+  color: #333;
+}
+
+.btn-eliminar {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 2;
+}
+
+.btn-eliminar:hover {
+  background-color: #b71c1c;
+}
+
+.tarjeta-producto {
+  position: relative;
+}
+
+.paginacion {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.paginacion button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 0 5px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.paginacion button:hover {
+  background-color: #388e3c;
+}
+
+.paginacion button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.paginacion span {
+  font-weight: bold;
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+.btn-eliminar {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 2;
+}
+
+.btn-eliminar:hover {
+  background-color: #b71c1c;
+}
+
+.tarjeta-producto {
+  position: relative;
+}
